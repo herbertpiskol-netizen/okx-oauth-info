@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Datenschutz – OKX Pre-IPO Daten</title>
+<style>body{max-width:760px;margin:48px auto;padding:0 24px;font:18px/1.6 system-ui;color:#202632}a{color:#185abd}aside{background:#fff3cc;padding:16px}h1{line-height:1.2}</style>
+
+<h1>Datenschutzerklärung</h1>
+<p>Anwendung: OKX Pre-IPO Daten. Verantwortlicher Ansprechpartner: Herbert Piskol, <a href="mailto:herbertpiskol@gmx.de">herbertpiskol@gmx.de</a>. Stand: 3. Oktober 2026.</p>
+<h2>Zweck und Zugriff</h2>
+<p>Die Anwendung speichert öffentlich abrufbare OKX-Marktdaten im ausgewählten Google-Drive-Ordner und prüft den Upload durch Rücklesen. Verarbeitet werden dafür OAuth-Zugangsdaten, die Zielordner-ID und Metadaten der erzeugten Dateien, einschließlich Datei-IDs, Größe und Prüfsummen.</p>
+<p>Der eingerichtete Google-OAuth-Zugriff umfasst den vollständigen Drive-Berechtigungsbereich. Diese Berechtigung ist weiter als der aktuelle Abrufjob benötigt: Der Job arbeitet mit dem ausgewählten Zielordner und den selbst erzeugten Dateien. Die Berechtigung kann in den Einstellungen des Google-Kontos widerrufen werden.</p>
+<h2>Speicherung und beteiligte Dienste</h2>
+<p>Die lokale Einrichtung speichert die Zugangsdaten mit Windows-DPAPI verschlüsselt. Der GitHub-Actions-Job verwendet die hinterlegten GitHub-Secrets zur Anmeldung bei Google. Zugangsdaten werden nicht in das Repository oder die Marktdaten-Dateien geschrieben. Google Drive speichert die erzeugten Marktdatenpakete. GitHub verarbeitet die Jobausführung, technische Protokolle und zusätzliche Abrufartefakte; für diese Artefakte ist eine Aufbewahrung von sieben Tagen eingestellt.</p>
+<p>Eine separat eingerichtete Claude/Cowork-Verbindung kann Marktdatenpakete und Research-Unterlagen aus Drive lesen und Ergebnisdateien speichern. Diese Verbindung ist von der Google-OAuth-Anmeldung des Abrufjobs getrennt. Für die Plattformen gelten zusätzlich deren eigene Datenschutzbestimmungen.</p>
+<h2>Verwendung der Google-Daten</h2>
+<p>Das Abrufskript verwendet Google-Nutzerdaten ausschließlich für die beschriebene Drive-Übergabe und deren Prüfung. Es verkauft diese Daten nicht, nutzt sie nicht für Werbung und führt kein Modelltraining damit durch. Andere Dateien im Drive werden durch den aktuellen Abrufjob nicht ausgewertet.</p>
+<h2>Widerruf und Löschen</h2>
+<p>Der Nutzer kann die App-Berechtigung im Google-Konto widerrufen, den GitHub-Workflow deaktivieren und die zugehörigen Secrets entfernen. Bereits erzeugte Dateien bleiben bestehen, bis der Nutzer sie in Drive beziehungsweise GitHub löscht. Im Drive-Upload ist kein automatischer Löschzeitraum eingerichtet.</p>
+<p><a href="index.html">Startseite</a> · <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></p>
+</html>
